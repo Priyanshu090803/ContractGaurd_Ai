@@ -3,7 +3,6 @@
 import { cn } from "@/lib/utils";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 import React from "react";
-import Image from "next/image";
 
 
 interface NavbarProps {
@@ -60,7 +59,7 @@ export const NavBody = ({ children, className }: NavBodyProps) => {
         minWidth: "800px",
       }}
       className={cn(
-        "relative z-60 mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-3xl bg-white/80 px-4 py-2 lg:flex dark:bg-neutral-950/80",
+        "relative z-60 mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-xl bg-white/80 px-4 py-1 lg:flex dark:bg-neutral-950/80",
         className,
       )}
     >
@@ -80,7 +79,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
       {items.map((item, idx) => (
         <a
           onClick={onItemClick}
-          className="relative px-4 py-2 text-neutral-600 dark:text-neutral-300 hover:bg-radial hover:from-[#afdeda] hover:-translate-y-0.5 duration-200 hover:shadow-lg hover:shadow-[#b4dcd7] dark:hover:bg-neutral-800 rounded-2xl transition-colors  "
+          className="relative px-4 py-2 text-neutral-600 dark:text-neutral-300 hover:bg-radial hover:from-[#f6fbff] hover:-translate-y-0.5 shadow-sm shadow-[#c8def4] duration-200 hover:shadow-lg hover:shadow-[#a6b6c6] dark:hover:bg-neutral-800 rounded-2xl transition-colors  "
           key={`link-${idx}`}
           href={item.link}
         >
@@ -160,10 +159,10 @@ export const NavbarLogo = () => {
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
       <img
-        src="/logo2.png"
+        src="/logo5.jpg"
         alt="logo"
-        width={120}
-        height={120}
+        width={40}
+        height={40}
       />
     </a>
   );
@@ -187,7 +186,7 @@ export const NavbarButton = ({
   | React.ComponentPropsWithoutRef<"button">
 )) => {
   const baseStyles =
-    "px-4 py-2 rounded-md bg-white button bg-white text-black text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
+    "px-4 py-2  button   text-black text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
 
   const variantStyles = {
     primary:

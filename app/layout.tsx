@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   title: "ContractGuard",
   description: "ContractGuard Ai, risk analysis software, legal tech, compliance automation, contract management, due diligence AI, legal risk assessment",
   icons: {
-    icon: { url:"/logo3.png", sizes: "192x192", type: "image/png" }
+    icon: { url:"/logo5.jpg", sizes: "192x192", type: "image/jpeg" }
   }
 };
 

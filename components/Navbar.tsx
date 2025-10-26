@@ -37,9 +37,10 @@ export function NavbarDemo() {
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
-          <div className="flex items-center gap-4">
-            <NavbarButton className=" shadow-md rounded-2xl shadow-[#b4dcd7] bg-radial from-[#b1e9e4]   hover:shadow-lg text-neutral-800" variant="primary">Login</NavbarButton>
-          </div>
+          <div className="flex items-center gap-2">
+            <NavbarButton className=" shadow-md rounded-xl shadow-[#7aabe7] bg-gradient-to-t  from-[#6ea9f0] to-[#4a66ae]   hover:shadow-lg text-white" variant="primary">Login</NavbarButton>
+            <NavbarButton className=" shadow-md rounded-xl shadow-[#7aabe7] bg-gradient-to-t  from-[#6ea9f0] to-[#4a66ae]   hover:shadow-lg text-white" variant="primary">Sign Up</NavbarButton>
+          </div>  
         </NavBody>
 
         {/* Mobile Navigation */}
