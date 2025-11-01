@@ -11,12 +11,14 @@ import {
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { Button } from "./ui/button";
 
 export function NavbarDemo() {
   const navItems = [
     {
-      name: "Features",
-      link: "#features",
+      name: "Product",
+      link: "#product",
     },
     {
       name: "Pricing",
@@ -38,8 +40,8 @@ export function NavbarDemo() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-2">
-            <NavbarButton className=" shadow-md rounded-xl shadow-[#7aabe7] bg-gradient-to-t  from-[#6ea9f0] to-[#4a66ae]   hover:shadow-lg text-white" variant="primary">Login</NavbarButton>
-            <NavbarButton className=" shadow-md rounded-xl shadow-[#7aabe7] bg-gradient-to-t  from-[#6ea9f0] to-[#4a66ae]   hover:shadow-lg text-white" variant="primary">Sign Up</NavbarButton>
+          <Button  className=" cursor-pointer font-medium     shadow-md rounded-lg shadow-[#c2c9f1] bg-gradient-to-t  to-[#faffff] from-[#f4f4f4] translate-y-0 hover:-translate-y-0.5 hover:shadow-lg text-neutral-800">Get Started</Button>
+          <Button  className=" cursor-pointer font-medium     shadow-md rounded-lg shadow-[#6fa6f3] bg-gradient-to-t    from-[#7daefc] to-[#2b57bf] translate-y-0 hover:-translate-y-0.5 hover:shadow-lg text-white" >Login</Button>
           </div>  
         </NavBody>
 

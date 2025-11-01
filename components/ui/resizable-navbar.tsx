@@ -72,14 +72,14 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
   return (
     <div
       className={cn(
-        "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-zinc-600 transition duration-200 hover:text-zinc-800 lg:flex lg:space-x-2",
+        "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-zinc-600 transition duration-200 hover:text-zinc-800 lg:flex lg:space-x-2 ",
         className,
       )}
     >
       {items.map((item, idx) => (
         <a
           onClick={onItemClick}
-          className="relative px-4 py-2 text-neutral-600 dark:text-neutral-300 hover:bg-radial hover:from-[#f6fbff] hover:-translate-y-0.5 shadow-sm shadow-[#c8def4] duration-200 hover:shadow-lg hover:shadow-[#a6b6c6] dark:hover:bg-neutral-800 rounded-2xl transition-colors  "
+          className="relative px-4 py-2 text-neutral-600 dark:text-neutral-300 hover:bg-radial hover:from-[#f6fbff] hover:-translate-y-0.5 shadow-sm shadow-[#c8def4] duration-200 hover:shadow-lg hover:shadow-[#a6b6c6] dark:hover:bg-neutral-800 rounded-2xl transition-colors bg-white/95  "
           key={`link-${idx}`}
           href={item.link}
         >
